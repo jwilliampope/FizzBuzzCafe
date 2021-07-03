@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundry FizzBuzz</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+    <img src="img/fizzbuzz.1.jpg" class="responsive" alt="buzzy logo" />
+    <div class="page-style">
+      <div class="page-style-heading">
+        <h3>WE FIZZBUZZ YOUR DREAMS!</h3>
+        <label><span>Enter A Number: </span><input class="input" id="Fizzvalue" type="number" type="range" min="1" max="100" name="fizz" value="3" /></label>
+        <label><span>Enter Another Number: </span><input class="input" id="Buzzvalue" type="number" type="range" min="1" max="100" name="buzz" value="5" /></label>
+        <div class="buttons">
+          <label><span></span><input id="buzzIt"  onClick="buzzIt()" type="submit" value="FIZZBUZZ ENGAGE" /></label>        
+          <label><span></span><input id="resetIt"  onClick="resetIt()" type="submit" value="RESET" /></label>
+        </div>
+        <label><span id="results-label">Your FizzBuzz:</span></label/><br>
+
+        <p id="results"></p>
+      </div>
+      <footer>
+        <img src="img/fizzbuzz_house.jpg" alt="fizzbuzz house">
+        <p>Copyright &copy; <span id="year"></span> FizzBuzz Cafe</p>
+      </footer>
+    </div>
+    
+  </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
