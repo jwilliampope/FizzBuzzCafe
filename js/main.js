@@ -3,7 +3,7 @@ let buzzValue = document.getElementById("buzzValue")
 let resultsLabel = document.getElementById("results-label")
 let results = document.getElementById("results")
 
-function fizzBuzzA(value1, value2) {
+function fizzBuzz(value1, value2) {
   let returnValue = ""
   for (let i = 1; i <= 100; i++) {
     if (i % value1 === 0 && i % value2 === 0) {
@@ -23,7 +23,7 @@ function buzzIt() {
   let output = ""
   let val1 = fizzValue.value
   let val2 = buzzValue.value
-  output = fizzBuzzA(val1, val2)
+  output = fizzBuzz(val1, val2)
   resultsLabel.style.display = "block"
   results.innerHTML = output
 }
