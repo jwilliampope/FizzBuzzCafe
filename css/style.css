@@ -20,10 +20,6 @@
   border-radius: 30px;
 }
 
-.input {
-  width: 20%;
-}
-
 .buttons {
   display: flex;
   flex-direction: row;
@@ -46,7 +42,7 @@
 }
 
 .page-style-heading h3 {
-  margin-bottom: 30px;
+  margin-bottom: 3px;
 }
 
 .page-style label {
@@ -56,32 +52,36 @@
 
 .page-style label > span {
   font-weight: bold;
-  padding-top: 0px;
+  padding-top: 0;
   padding-right: 5px;
+}
+
+input {
+  margin-right: 20px;
 }
 
 .page-style input[type="submit"],
 .page-style input[type="button"] {
-  border: none;
-  padding: 8px 15px 8px 15px;
+  padding: 8px 15px;
   background: #f6e000;
   color: #000;
-  box-shadow: 1px 1px 4px #dadada;
+  box-shadow: 1px 1px 4px #999;
   border-radius: 3px;
-  border: 5px solid #000;
+  border: 3px solid #000;
   font-weight: 700;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .page-style input[type="submit"]:hover,
 .page-style input[type="button"]:hover {
   background: #000;
   color: #f6e000;
-  border: 5px solid #f6e000;
+  border: 3px solid #f6e000;
 }
 
 #results-label {
   display: none;
-  margin-top: 30px;
 }
 
 #results {
