@@ -1,16 +1,16 @@
-let fizzValue = document.getElementById("fizzValue")
-let buzzValue = document.getElementById("buzzValue")
-let resultsLabel = document.getElementById("results-label")
-let results = document.getElementById("results")
+const fizzValue = document.getElementById("fizzValue")
+const buzzValue = document.getElementById("buzzValue")
+const resultsLabel = document.getElementById("results-label")
+const results = document.getElementById("results")
 
 function fizzBuzz(value1, value2) {
   let returnValue = ""
   for (let i = 1; i <= 100; i++) {
-    if (i % value1 === 0 && i % value2 === 0) {
-      returnValue += `<strong>FIZZ-BUZZ</strong> `
-    } else if (i % value1 === 0) {
+    if (i % value1 == 0 && i % value2 == 0) {
+      returnValue += `<strong>FIZZ-BUZZ </strong>`
+    } else if (i % value1 == 0) {
       returnValue += `fizz `
-    } else if (i % value2 === 0) {
+    } else if (i % value2 == 0) {
       returnValue += `buzz `
     } else {
       returnValue += `${i} `
@@ -35,3 +35,6 @@ function resetIt() {
   resultsLabel.style.display = "none"
   results.innerHTML = ""
 }
+
+let date = new Date().getFullYear()
+document.getElementById("year").innerHTML = date
